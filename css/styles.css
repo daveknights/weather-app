@@ -1,0 +1,169 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eee;
+}
+
+.container {
+    background: white;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+header {
+    background: linear-gradient(55deg, #1e5dff, #1ea6ff 50%, #ffdf1e, #ffa11e);
+}
+
+main {
+    color: #011b54;
+    padding: 20px;
+}
+
+.logo {
+    display: block;
+    padding: 15px;
+    width: auto;
+}
+
+.main-content,
+.location-search {
+    border: solid 2px #c5c5c5;
+    border-radius: 20px;
+    padding: 30px 20px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.town {
+    display: block;
+    font-size: 1.75rem;
+}
+
+.icon-and-temperature {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.icon-and-temperature sup {
+    font-size: 3.75rem;
+}
+
+.icon {
+    height: 120px;
+    width: auto;
+}
+
+.current-temp {
+    font-size: 4rem;
+    line-height: 120px;
+}
+
+.description {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.date-and-range {
+    border-top: solid 2px #c5c5c5;
+    display: inline-block;
+    padding: 20px 20px 0;
+}
+
+.date-today {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+.temperature-range {
+    display: flex;
+    justify-content: space-between;
+}
+
+.temperature-range span {
+    font-size: 1.5rem;
+}
+
+.location-search {
+    margin-top: 20px;
+}
+
+.location-search label {
+    font-weight: bold;
+}
+
+#new-location {
+    border: solid 1px #011b54;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    padding: 10px;
+    width: 100%;
+    -webkit-appearance: none;
+}
+
+small {
+    display: block;
+    line-height: 1.5;
+    margin-top: 20px;
+    padding-left: 10px;
+    position: relative;
+    text-align: left;
+}
+
+small span {
+    font-size: 1rem;
+    left: 0;
+    position: absolute;
+}
+
+@media (min-width: 768px) {
+    main {
+        height: calc(100vh - 139px);
+        padding: 50px;
+    }
+
+    .logo {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .town {
+        display: inline;
+        font-size: 2.5rem;
+    }
+
+    .location-search {
+        margin-top: 40px;
+    }
+
+    #new-location  {
+        width: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .logo {
+        height: 80px;
+        width: auto;
+    }
+
+    .location-search label  {
+        display: block;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img/logo.png" alt="Weather App" class="logo">
+        </header>
+        <main>
+            <div class="main-content">
+                <h1>Here's the weather for <strong class="town"></strong></h2>
+                <div class="icon-and-temperature">
+                    <img src="" alt="" class="icon">
+                    <p><span class="current-temp"></span><sup>&deg;</sup></p>
+                </div>
+                <p class="description"></p>
+                <form class="date-and-range">
+                    <p class="date-today"></p>
+                    <div class="temperature-range">
+                        <div><label>Min: </label><output class="min-temp"></output><sup>&deg;</sup></div>
+                        <span>/</span>
+                        <div><label>Max: </label><output class="max-temp"></output><sup>&deg;</sup></div>
+                    </div>
+                </form>
+            </div>
+            <div class="location-search">
+                <form>
+                    <label for="new-location">Search for another location*</label>
+                    <input type="text" id="new-location">
+                </form>
+            </div>
+
+            <small>
+                <span>*</span>
+                Defaults to London and using dummy data from 8th Feb 2021, to allow pushing to github without the need for an api key.
+                Available searches are London, Glasgow, Belfast, Cardiff and Dublin.
+            </small>
+        </main>
+    </div>
+
+    <script src="scripts/script.js" type="module"></script>
+</body>
+</html>
