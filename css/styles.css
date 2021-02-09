@@ -100,16 +100,30 @@ h1 {
 }
 
 .location-search label {
+    display: block;
     font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 #new-location {
     border: solid 1px #011b54;
     border-radius: 10px;
     font-size: 1.25rem;
+    margin-bottom: 20px;
     padding: 10px;
     width: 100%;
     -webkit-appearance: none;
+}
+
+.search-btn {
+    background: #011b54;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.25rem;
+    height: 45px;
+    width: 100%;
 }
 
 small {
@@ -148,10 +162,8 @@ small span {
 
     .location-search {
         margin-top: 40px;
-    }
-
-    #new-location  {
-        width: 250px;
+        padding-left: 200px;
+        padding-right: 200px;
     }
 }
 
@@ -159,11 +171,5 @@ small span {
     .logo {
         height: 80px;
         width: auto;
-    }
-
-    .location-search label  {
-        display: block;
-        margin-bottom: 10px;
-        text-align: left;
     }
 }
